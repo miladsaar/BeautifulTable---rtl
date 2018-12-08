@@ -1,0 +1,110 @@
+﻿<#@ template language="C#" HostSpecific="True" #>
+<#@ output extension=".cshtml" #>
+<#@ include file="Imports.include.t4" #>
+@using BeautifulTable
+@model IEnumerable<#= "<" + ViewDataTypeName + ">" #>
+<#
+// The following chained if-statement outputs the file header code and markup for a partial view, a view using a layout page, or a regular view.
+if(IsPartialView) {
+#>
+
+<#
+} else if(IsLayoutPageSelected) {
+#>
+
+@{
+    ViewBag.Title = "<#= ViewName#>";
+<#
+if (!String.IsNullOrEmpty(LayoutPageFile)) {
+#>
+    Layout = "<#= LayoutPageFile#>";
+<#
+}
+#>
+}
+
+<h4>لیست</h4>
+
+<#
+} else {
+#>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title><#= ViewName #></title>
+	
+  
+    <link href="~/Content/MyTable/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/zocial.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/StyleNewTable.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/StyleImages.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/StyleTableButton.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/StyleTableColor.css" rel="stylesheet" />
+    <script src="~/Content/MyTable/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+</head>
+<body>
+<#
+    PushIndent("    ");
+}
+#>
+
+@{
+    var cols = new string[]
+    {
+<#
+IEnumerable<PropertyMetadata> properties = ModelMetadata.Properties;
+foreach (PropertyMetadata property in properties) {
+    if (property.Scaffold && !property.IsPrimaryKey && !property.IsForeignKey) {
+#>
+<#
+        // We do not want to show any association properties for which there is
+        // no associated foreign key.
+        if (property.IsAssociation && GetRelatedModelMetadata(property) == null) {
+            continue;
+        }
+#>      
+           "<#= GetValueExpression(property) #>",      
+<#
+    }
+}
+#>
+    };   
+  }
+     @MakeMyTable.MyTable(Html,"table1", "MyTable", cols, Model, TableColor.Black,TableBorder.None,true,true)
+
+<#
+if(!IsPartialView && !IsLayoutPageSelected) {
+    ClearIndent();
+#>
+<#
+if(!IsLayoutPageSelected) {
+#>
+    <script src="~/Content/MyTable/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Content/MyTable/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Content/MyTable/Scripts/bootstrap.js"></script>
+    <script src="~/Content/MyTable/js/TableJs.min.js"></script>
+
+   <script>
+     $(document).ready(function() {      
+        TableJs("table1");
+     })
+   </script>
+<#
+	}
+#>
+</body>
+</html>
+<#
+}
+#>
+<#@ include file="ModelMetadataFunctions.cs.include.t4" #>

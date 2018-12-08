@@ -1,0 +1,62 @@
+﻿@using BeautifulTable
+
+
+@model IEnumerable<TestMyTable.Models.SampelData>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>TestTable</title>
+
+    <script src="~/Content/MyTable/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/MyTable/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/zocial.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/StyleNewTable.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/StyleImages.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/StyleTableButton.css" rel="stylesheet" />
+    <link href="~/Content/MyTable/css/StyleTableColor.css" rel="stylesheet" />
+    <script src="~/Content/MyTable/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+</head>
+<body class="body-content" style="background-color:black" >
+
+    @{
+        var cols = new string[]
+        {
+
+       "Name",
+
+       "Family",
+
+       "Email",
+
+       "LastSeen",
+
+       "Statue",
+
+       "About",
+
+       "Discription",
+        };
+    }
+    @MyTable.MakeTable(Html, "table1", "MyTable", cols, Model, TableColor.Blue, TableBorder.None, true, true)
+
+    <script src="~/Content/MyTable/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Content/MyTable/Scripts/bootstrap.js"></script>
+    <script src="~/Content/MyTable/js/TableJs.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            TableJs("table1");
+        })
+    </script>
+</body>
+</html>
