@@ -157,6 +157,51 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\MyTable-rtl\css\bootstrap-rtl.css" />
+    <Content Include="Content\MyTable-rtl\css\bootstrap-rtl.min.css" />
+    <Content Include="Content\MyTable-rtl\css\bootstrap.css" />
+    <Content Include="Content\MyTable-rtl\css\font-awesome.css" />
+    <Content Include="Content\MyTable-rtl\css\font-awesome.min.css" />
+    <Content Include="Content\MyTable-rtl\css\StyleImages.css" />
+    <Content Include="Content\MyTable-rtl\css\StyleNewTable.css" />
+    <Content Include="Content\MyTable-rtl\css\StyleTableButton.css" />
+    <Content Include="Content\MyTable-rtl\css\StyleTableColor.css" />
+    <Content Include="Content\MyTable-rtl\css\zocial.css" />
+    <Content Include="Content\MyTable-rtl\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\MyTable-rtl\Images\excel.ico" />
+    <Content Include="Content\MyTable-rtl\Images\Imprimante2.png" />
+    <Content Include="Content\MyTable-rtl\Images\Information.png" />
+    <Content Include="Content\MyTable-rtl\Images\pdf.ico" />
+    <Content Include="Content\MyTable-rtl\Images\Search.png" />
+    <Content Include="Content\MyTable-rtl\Images\SoftwareUpdate.png" />
+    <Content Include="Content\MyTable-rtl\js\TableJs.js" />
+    <Content Include="Content\MyTable-rtl\js\TableJs.min.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\bootstrap.bundle.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\bootstrap.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\bootstrap.min.js" />
+    <None Include="Content\MyTable-rtl\Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-1.10.2.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-1.10.2.min.js" />
+    <None Include="Content\MyTable-rtl\Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-3.3.1.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Content\MyTable-rtl\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery.validate.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery.validate.min.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\popper-utils.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\popper-utils.min.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\popper.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\popper.min.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\respond.js" />
+    <Content Include="Content\MyTable-rtl\Scripts\respond.min.js" />
     <Content Include="Content\MyTable\css\bootstrap-rtl.css" />
     <Content Include="Content\MyTable\css\bootstrap-rtl.min.css" />
     <Content Include="Content\MyTable\css\bootstrap.css" />
@@ -189,6 +234,24 @@
     <Content Include="CodeTemplates\MvcView\Imports.include.t4" />
     <Content Include="CodeTemplates\MvcView\List.cs.t4" />
     <Content Include="CodeTemplates\MvcView\ModelMetadataFunctions.cs.include.t4" />
+    <Content Include="CodeTemplates\MvcView\BeautifulTable-Rtl.cs.t4" />
+    <Content Include="Content\MyTable-rtl\css\bootstrap-rtl.css.map" />
+    <Content Include="Content\MyTable-rtl\css\bootstrap-rtl.min.css.map" />
+    <Content Include="Content\MyTable-rtl\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\MyTable-rtl\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\MyTable-rtl\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\MyTable-rtl\Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\bootstrap.js.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\bootstrap.min.js.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\popper-utils.js.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\popper-utils.min.js.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\popper.js.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\popper.min.js.map" />
+    <Content Include="Content\MyTable-rtl\Scripts\README.md" />
     <None Include="Content\MyTable\Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Content\MyTable\Scripts\jquery-1.10.2.js" />
     <Content Include="Content\MyTable\Scripts\jquery-1.10.2.min.js" />
@@ -278,6 +341,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Content\MyTable-rtl\Scripts\index.d.ts" />
     <TypeScriptCompile Include="Content\MyTable\Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
