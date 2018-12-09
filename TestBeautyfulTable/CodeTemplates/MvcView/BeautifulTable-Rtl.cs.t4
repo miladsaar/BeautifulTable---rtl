@@ -42,17 +42,17 @@ if (!String.IsNullOrEmpty(LayoutPageFile)) {
     <title><#= ViewName #></title>
 	
   
-    <link href="~/Content/MyTable/css/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/MyTable/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="~/Content/MyTable/css/zocial.css" rel="stylesheet" />
-    <link href="~/Content/MyTable/css/StyleNewTable.css" rel="stylesheet" />
-    <link href="~/Content/MyTable/css/StyleImages.css" rel="stylesheet" />
-    <link href="~/Content/MyTable/css/StyleTableButton.css" rel="stylesheet" />
-    <link href="~/Content/MyTable/css/StyleTableColor.css" rel="stylesheet" />
-    <script src="~/Content/MyTable/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <link href="~/Content/MyTable-rtl/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/zocial.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/StyleNewTable.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/StyleImages.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/StyleTableButton.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/StyleTableColor.css" rel="stylesheet" />
+    <script src="~/Content/MyTable-rtl/Scripts/jquery.unobtrusive-ajax.js"></script>
 
 </head>
-<body>
+<body class="rtl">
 <#
     PushIndent("    ");
 }
@@ -89,10 +89,10 @@ if(!IsPartialView && !IsLayoutPageSelected) {
 <#
 if(!IsLayoutPageSelected) {
 #>
-    <script src="~/Content/MyTable/Scripts/modernizr-2.6.2.js"></script>
-    <script src="~/Content/MyTable/Scripts/jquery-3.3.1.js"></script>
-    <script src="~/Content/MyTable/Scripts/bootstrap.js"></script>
-    <script src="~/Content/MyTable/js/TableJs.min.js"></script>
+    <script src="~/Content/MyTable-rtl/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Content/MyTable-rtl/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Content/MyTable-rtl/Scripts/bootstrap.js"></script>
+    <script src="~/Content/MyTable-rtl/js/TableJs.js"></script>
 
    <script>
      $(document).ready(function() {      
