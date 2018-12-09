@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautifulTable", "Beautiful
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBeautyfulTable", "TestBeautyfulTable\TestBeautyfulTable.csproj", "{F3C1C86D-89AE-45F3-A16C-ABBD06471574}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautifulTable-rtl", "BeautifulTable-rtl\BeautifulTable-rtl.csproj", "{EF216B8A-1E02-4B99-B0EF-7A5F36F9F531}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F3C1C86D-89AE-45F3-A16C-ABBD06471574}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3C1C86D-89AE-45F3-A16C-ABBD06471574}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3C1C86D-89AE-45F3-A16C-ABBD06471574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF216B8A-1E02-4B99-B0EF-7A5F36F9F531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF216B8A-1E02-4B99-B0EF-7A5F36F9F531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF216B8A-1E02-4B99-B0EF-7A5F36F9F531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF216B8A-1E02-4B99-B0EF-7A5F36F9F531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
