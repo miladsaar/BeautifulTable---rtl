@@ -178,7 +178,6 @@
     <Content Include="Content\MyTable-rtl\Images\Search.png" />
     <Content Include="Content\MyTable-rtl\Images\SoftwareUpdate.png" />
     <Content Include="Content\MyTable-rtl\js\TableJsrtl.js" />
-    <Content Include="Content\MyTable-rtl\js\TableJs.min.js" />
     <Content Include="Content\MyTable-rtl\Scripts\bootstrap.bundle.js" />
     <Content Include="Content\MyTable-rtl\Scripts\bootstrap.bundle.min.js" />
     <Content Include="Content\MyTable-rtl\Scripts\bootstrap.js" />
@@ -222,7 +221,6 @@
     <Content Include="Content\MyTable\Images\pdf.ico" />
     <Content Include="Content\MyTable\Images\Search.png" />
     <Content Include="Content\MyTable\Images\SoftwareUpdate.png" />
-    <Content Include="Content\MyTable\js\TableJs.js" />
     <Content Include="Content\MyTable\js\TableJs.min.js" />
     <Content Include="Content\MyTable\Scripts\bootstrap.bundle.js" />
     <Content Include="Content\MyTable\Scripts\bootstrap.bundle.min.js" />
