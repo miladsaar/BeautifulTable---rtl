@@ -93,7 +93,7 @@ if(!IsLayoutPageSelected) {
     <script src="~/Content/MyTable-rtl/Scripts/modernizr-2.6.2.js"></script>
     <script src="~/Content/MyTable-rtl/Scripts/jquery-3.3.1.js"></script>
     <script src="~/Content/MyTable-rtl/Scripts/bootstrap.js"></script>
-    <script src="~/Content/MyTable-rtl/js/TableJs.js"></script>
+    <script src="~/Content/MyTable-rtl/js/TableJsrtl.js"></script>
 
    <script>
      $(document).ready(function() {      

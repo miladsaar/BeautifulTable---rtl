@@ -200,7 +200,7 @@ function LoadPager(id) {
     if (countPages > 1) {
         $(pages).append("<a class='btn btn-warning prvButton' href='#'" +
             "onclick='GoPrevious(this)'>" +
-            "<span> Prev</span>" +
+            "<span> قبلی</span>" +
             "</a>");
     }
     var btnClass = "";
@@ -234,7 +234,7 @@ function LoadPager(id) {
     if (countPages > 1) {
         $(pages).append("<a class='btn btn-warning nextButton' href='#' " +
             "onclick='GoNext(this)'>" +
-            "<span>Next</span>" +
+            "<span>بعدی</span>" +
             "</a>");
     }
 
