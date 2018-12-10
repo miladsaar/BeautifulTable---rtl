@@ -180,7 +180,7 @@ namespace BeautifulTable_rtl
         {
             return "<thead><tr>" +
                    $"<td colspan = '{colNumber}'>" +
-                   "<div class='table-header col-md-1' style='float: left; display: inline-block;'>" +
+                   "<div class='table-header col-md-1' style='float: right; display: inline-block;'>" +
                    $"<img class='icons' src='{HeaderIcon}' id='pdf' alt=''/>" +
                    $"<p style = 'display: inline-block' class='text-lg-left'>{tableName}</p>" +
                    "</div></td ></tr ></thead>";
@@ -210,10 +210,10 @@ namespace BeautifulTable_rtl
             {
                 btn =
                     "<div class='col-md-2'>" +
-                    $"<img class='icons' src='{Excel}' id='excel' alt='' title='Download as Excell' data-toggle='tooltip'/>" +
-                    $"<img class='icons' src='{Pdf}' id='pdf' alt='' title='Download as pdf' data-toggle='tooltip'/>" +
-                    $"<img class='icons' src='{Printer}' id='printer' alt='' title='Print' data-toggle='tooltip'/>" +
-                    $"<img class='icons' src='{Reload}' id='reload' alt='' title='Reload' data-toggle='tooltip'/>" +
+                    $"<img class='icons' src='{Excel}' id='excel' alt='' title='دانلود به صورت اکسل' data-toggle='tooltip'/>" +
+                    $"<img class='icons' src='{Pdf}' id='pdf' alt='' title='دانلود بصورت پی دی اف' data-toggle='tooltip'/>" +
+                    $"<img class='icons' src='{Printer}' id='printer' alt='' title='پرینت' data-toggle='tooltip'/>" +
+                    $"<img class='icons' src='{Reload}' id='reload' alt='' title='بارگزاری مجدد' data-toggle='tooltip'/>" +
 
                     "</div>";
 
@@ -232,7 +232,7 @@ namespace BeautifulTable_rtl
                          "</select>" +
 
                          $"<img class='col-md-3 icons' src='{Search}' id='SearchIcon' alt='' title='Search' data-toggle='tooltip' />" +
-                         "<input class='col-md-3 input' type='text' style='width: 100px;' placeholder='Search' onkeyup='FilterCol(this)' />" +
+                         "<input class='col-md-3 input' type='text' style='width: 100px;' placeholder='جستجو' onkeyup='FilterCol(this)' />" +
                          "<lable id = '#dataInfo' class='col-form-label-lg'></lable>" +
                          " </div>";
             }
@@ -241,9 +241,9 @@ namespace BeautifulTable_rtl
             {
                 rowsNumber = "<div class='col-md-3'>" +
 
-                             $"<label for='rowsNumber' class='col-form-label-lg'>Rows number:</label>" +
+                             $"<label for='rowsNumber' class='col-form-label-lg'>تعداد ردیف ها : </label>" +
                              $"<input class='input' name='rowsNumber' type='number' style='width: 100px;' value='{CountItemsInPage}' max='{CountItemsInPage}' min='1' />" +
-                             $"<input name='btnDone' type='button' class='input btn btn-lg btn-outline-danger' value='Done' onclick='ReloadPager(this)' />" +
+                             $"<input name='btnDone' type='button' class='input btn btn-lg btn-outline-danger' value='انجام' onclick='ReloadPager(this)' />" +
                              "</div>";
             }
 
