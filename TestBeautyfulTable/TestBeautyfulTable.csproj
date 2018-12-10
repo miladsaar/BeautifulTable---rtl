@@ -167,7 +167,7 @@
     <Content Include="Content\MyTable-rtl\css\font-awesome.min.css" />
     <Content Include="Content\MyTable-rtl\css\StyleImages.css" />
     <Content Include="Content\MyTable-rtl\css\StyleNewTable.css" />
-    <Content Include="Content\MyTable-rtl\css\StyleTableButton.css" />
+    <Content Include="Content\MyTable-rtl\css\StyleTableButton-rtl.css" />
     <Content Include="Content\MyTable-rtl\css\StyleTableColor.css" />
     <Content Include="Content\MyTable-rtl\css\zocial.css" />
     <Content Include="Content\MyTable-rtl\fonts\glyphicons-halflings-regular.svg" />

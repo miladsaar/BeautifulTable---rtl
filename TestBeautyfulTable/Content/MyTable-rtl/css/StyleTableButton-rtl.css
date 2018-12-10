@@ -28,18 +28,18 @@
     position: absolute;
     opacity: 0;
     top: 0;
-    right: 20px;
+    left: 20px;
     transition: 0.5s;
 
 }
 
 .nextButton:hover span {
-    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .nextButton:hover span:after {
     opacity: 1;
-    right: 0;
+    left: 0;
 }
 
 
@@ -72,16 +72,16 @@
     position: absolute;
     opacity: 0;
     top: 0;
-    left: 15px;
+    right: 15px;
     transition: 0.5s;
 }
 
 .prvButton:hover span {
-    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .prvButton:hover span:after {
     opacity: 1;
-    left: 0px;
+    right: 0px;
 }
 
