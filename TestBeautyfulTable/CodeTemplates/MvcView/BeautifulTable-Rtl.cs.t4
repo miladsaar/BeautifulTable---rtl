@@ -1,7 +1,7 @@
 ﻿<#@ template language="C#" HostSpecific="True" #>
 <#@ output extension=".cshtml" #>
 <#@ include file="Imports.include.t4" #>
-@using BeautifulTable
+@using BeautifulTable_rtl
 @model IEnumerable<#= "<" + ViewDataTypeName + ">" #>
 <#
 // The following chained if-statement outputs the file header code and markup for a partial view, a view using a layout page, or a regular view.
@@ -42,7 +42,7 @@ if (!String.IsNullOrEmpty(LayoutPageFile)) {
     <title><#= ViewName #></title>
 	
   
-    <link href="~/Content/MyTable-rtl/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/bootstrap-rtl.css" rel="stylesheet" />
     <link href="~/Content/MyTable-rtl/css/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/MyTable-rtl/css/zocial.css" rel="stylesheet" />
     <link href="~/Content/MyTable-rtl/css/StyleNewTable.css" rel="stylesheet" />
@@ -80,7 +80,7 @@ foreach (PropertyMetadata property in properties) {
 #>
     };   
   }
-     @MakeMyTable.MyTable(Html,"table1", "MyTable", cols, Model, TableColor.Black,TableBorder.None,true,true)
+     @MyTableRtl.MakeTable(Html,"table1", "MyTable", cols, Model, TableColor.Black,TableBorder.None,true,true)
 
 <#
 if(!IsPartialView && !IsLayoutPageSelected) {
@@ -89,6 +89,7 @@ if(!IsPartialView && !IsLayoutPageSelected) {
 <#
 if(!IsLayoutPageSelected) {
 #>
+    <script src="~/Content/MyTable-rtl/Scripts/bootstrap.bundle.js"></script>
     <script src="~/Content/MyTable-rtl/Scripts/modernizr-2.6.2.js"></script>
     <script src="~/Content/MyTable-rtl/Scripts/jquery-3.3.1.js"></script>
     <script src="~/Content/MyTable-rtl/Scripts/bootstrap.js"></script>
