@@ -132,11 +132,11 @@
 
     .new-table .table-footer div:last-child {
         float: left;
-        margin-right: 5px;
+        margin-left: 5px;
     }
 
     .new-table .table-footer div:first-child {
-        margin-left: 10px;
+        margin-right: 10px;
     }
 
 .new-table .table-header {
