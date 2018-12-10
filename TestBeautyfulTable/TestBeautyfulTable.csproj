@@ -177,7 +177,7 @@
     <Content Include="Content\MyTable-rtl\Images\pdf.ico" />
     <Content Include="Content\MyTable-rtl\Images\Search.png" />
     <Content Include="Content\MyTable-rtl\Images\SoftwareUpdate.png" />
-    <Content Include="Content\MyTable-rtl\js\TableJsrtl.js" />
+    <Content Include="Content\MyTable-rtl\js\TableJsrtl.min.js" />
     <Content Include="Content\MyTable-rtl\Scripts\bootstrap.bundle.js" />
     <Content Include="Content\MyTable-rtl\Scripts\bootstrap.bundle.min.js" />
     <Content Include="Content\MyTable-rtl\Scripts\bootstrap.js" />
