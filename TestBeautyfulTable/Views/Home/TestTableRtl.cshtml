@@ -1,0 +1,62 @@
+﻿@using BeautifulTable_rtl
+@model IEnumerable<TestMyTable.Models.SampelData>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>TestTableRtl</title>
+	
+  
+    <link href="~/Content/MyTable-rtl/css/bootstrap-rtl.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/zocial.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/StyleNewTable.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/StyleImages.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/StyleTableButton.css" rel="stylesheet" />
+    <link href="~/Content/MyTable-rtl/css/StyleTableColor.css" rel="stylesheet" />
+    <script src="~/Content/MyTable-rtl/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+</head>
+<body class="rtl">
+    
+    @{
+        var cols = new string[]
+        {
+          
+               "Name",      
+          
+               "Family",      
+          
+               "Email",      
+          
+               "LastSeen",      
+          
+               "Statue",      
+          
+               "About",      
+          
+               "Discription",      
+        };   
+      }
+         @MyTableRtl.MakeTable(Html,"table1", "MyTable", cols, Model, TableColor.Black,TableBorder.None,true,true)
+    
+    <script src="~/Content/MyTable-rtl/Scripts/bootstrap.bundle.js"></script>
+    <script src="~/Content/MyTable-rtl/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Content/MyTable-rtl/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Content/MyTable-rtl/Scripts/bootstrap.js"></script>
+    <script src="~/Content/MyTable-rtl/js/TableJs.js"></script>
+
+   <script>
+     $(document).ready(function() {      
+        TableJs("table1");
+     })
+   </script>
+</body>
+</html>

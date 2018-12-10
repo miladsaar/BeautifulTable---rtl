@@ -51,6 +51,9 @@
     <Reference Include="BeautifulTable">
       <HintPath>..\BeautifulTable\bin\Debug\BeautifulTable.dll</HintPath>
     </Reference>
+    <Reference Include="BeautifulTable-rtl">
+      <HintPath>..\BeautifulTable-rtl\bin\Debug\BeautifulTable-rtl.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -323,6 +326,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\TestTable.cshtml" />
+    <Content Include="Views\Home\TestTableRtl.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
