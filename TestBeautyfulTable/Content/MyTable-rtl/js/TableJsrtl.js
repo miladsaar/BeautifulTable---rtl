@@ -311,7 +311,6 @@ function SetBtn(currentPage, i, tableId) {
 function SetFonts(id) {
     var headerId = "#" + id + " thead";
     var footerId = "#" + id + " tfoot";
-    //var btnColor = "#" + id + " tfoot a";
     var bodyId = "#" + id + " tbody tr td";
     var colors = "#" + id + "fontColor";
     var colorsFonts = $(colors).val();
@@ -320,7 +319,6 @@ function SetFonts(id) {
         $(headerId).css("color", a[0]);
         $(bodyId).css("color", a[1]);
         $(footerId).css("color", a[2]);
-        //$(btnColor).css("color", a[2]);
     }
    
 
