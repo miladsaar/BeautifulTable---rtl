@@ -80,7 +80,7 @@ foreach (PropertyMetadata property in properties) {
 #>
     };   
   }
-     @MyTableRtl.MakeTable(Html,"table1", "MyTable", cols, Model, TableColor.Black,TableBorder.None,true,true)
+     @MyTableRtl.MakeTable(Html,"table1", "جدول من", cols, Model, TableColor.Black,TableBorder.None,true,true)
 
 <#
 if(!IsPartialView && !IsLayoutPageSelected) {
